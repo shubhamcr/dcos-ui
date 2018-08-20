@@ -24,13 +24,7 @@ describe("Jobs", function() {
 
     // Fill-in the input elements
     cy.root().getFormGroupInputFor("ID *").type(`{selectall}${fullJobName}`);
-    //
-    // TODO: Due to a bug in cypress you cannot type values with dots
-    // cy
-    //   .root()
-    //   .getFormGroupInputFor('CPUs')
-    //   .type('{selectall}0.1');
-    //
+    cy.root().getFormGroupInputFor("CPUs").type("{selectall}0.1");
     cy.root().getFormGroupInputFor("Mem (MiB)").type("{selectall}32");
     cy.root().getFormGroupInputFor("Command").type(cmdline);
 
@@ -84,13 +78,9 @@ describe("Jobs", function() {
 
     // Fill-in the input elements
     cy.root().getFormGroupInputFor("ID *").type(`{selectall}${fullJobName}`);
-    //
-    // TODO: Due to a bug in cypress you cannot type values with dots
-    // cy
-    //   .root()
-    //   .getFormGroupInputFor('CPUs')
-    //   .type('{selectall}0.5');
-    //
+    cy.root()
+      .getFormGroupInputFor("CPUs")
+      .type("{selectall}0.5");
     cy.root().getFormGroupInputFor("Mem (MiB)").type("{selectall}32");
     cy.root().getFormGroupInputFor("Command").type(cmdline);
 
@@ -131,13 +121,7 @@ describe("Jobs", function() {
       .root()
       .getFormGroupInputFor("ID *")
       .should("have.value", `${fullJobName}`);
-    //
-    // TODO: Due to a bug in cypress you cannot type values with dots
-    // cy
-    //   .root()
-    //   .getFormGroupInputFor('CPUs')
-    //   .type('{selectall}0.5');
-    //
+    cy.root().getFormGroupInputFor("CPUs").type("{selectall}0.5");
     cy.root().getFormGroupInputFor("Mem (MiB)").should("have.value", "32");
     cy.root().getFormGroupInputFor("Command").contains(cmdline);
 
@@ -170,13 +154,7 @@ describe("Jobs", function() {
 
     // Fill-in the input elements
     cy.root().getFormGroupInputFor("ID *").type(`{selectall}${fullJobName}`);
-    //
-    // TODO: Due to a bug in cypress you cannot type values with dots
-    // cy
-    //   .root()
-    //   .getFormGroupInputFor('CPUs')
-    //   .type('{selectall}0.5');
-    //
+    cy.root().getFormGroupInputFor("CPUs").type("{selectall}0.5");
     cy.root().getFormGroupInputFor("Mem (MiB)").type("{selectall}32");
     cy.root().getFormGroupInputFor("Command").type(cmdline);
 
@@ -315,13 +293,7 @@ describe("Jobs", function() {
 
     // Fill-in the input elements
     cy.root().getFormGroupInputFor("ID *").type(`{selectall}${fullJobName}`);
-    //
-    // TODO: Due to a bug in cypress you cannot type values with dots
-    // cy
-    //   .root()
-    //   .getFormGroupInputFor('CPUs')
-    //   .type('{selectall}0.1');
-    //
+    cy.root().getFormGroupInputFor("CPUs").type("{selectall}0.1");
     cy.root().getFormGroupInputFor("Mem (MiB)").type("{selectall}32");
     cy.root().getFormGroupInputFor("Command").type(cmdline);
 
@@ -369,12 +341,7 @@ describe("Jobs", function() {
       .getFormGroupInputFor("ID *")
       .should("have.value", `${fullJobName}`);
     //
-    // TODO: Due to a bug in cypress you cannot type values with dots
-    // cy
-    //   .root()
-    //   .getFormGroupInputFor('CPUs')
-    //   .type('{selectall}0.1');
-    //
+    cy.root().getFormGroupInputFor("CPUs").type("{selectall}0.1");
     cy.root().getFormGroupInputFor("Mem (MiB)").should("have.value", "32");
     cy.root().getFormGroupInputFor("Command").contains(cmdline);
 

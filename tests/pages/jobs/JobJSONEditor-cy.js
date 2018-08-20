@@ -22,13 +22,9 @@ describe("Job JSON Editor", function() {
 
     // Fill-in the input elements
     cy.root().getFormGroupInputFor("ID *").type(`{selectall}${fullJobName}`);
-    //
-    // TODO: Due to a bug in cypress you cannot type values with dots
-    // cy
-    //   .root()
-    //   .getFormGroupInputFor('CPUs')
-    //   .type('{selectall}0.1');
-    //
+    cy.root()
+      .getFormGroupInputFor("CPUs")
+      .type("{selectall}0.1");
     cy.root().getFormGroupInputFor("Mem (MiB)").type("{selectall}32");
     cy.root().getFormGroupInputFor("Command").type(cmdline);
 
@@ -65,12 +61,9 @@ describe("Job JSON Editor", function() {
     // Fill-in the input elements
     cy.root().getFormGroupInputFor("ID *").type(`{selectall}${fullJobName}`);
     //
-    // TODO: Due to a bug in cypress you cannot type values with dots
-    // cy
-    //   .root()
-    //   .getFormGroupInputFor('CPUs')
-    //   .type('{selectall}0.5');
-    //
+    cy.root()
+      .getFormGroupInputFor("CPUs")
+      .type("{selectall}0.5");
     cy.root().getFormGroupInputFor("Mem (MiB)").type("{selectall}32");
     cy.root().getFormGroupInputFor("Command").type(cmdline);
 
@@ -149,13 +142,9 @@ describe("Job JSON Editor", function() {
 
     // Fill-in the input elements
     cy.root().getFormGroupInputFor("ID *").type(`{selectall}${fullJobName}`);
-    //
-    // TODO: Due to a bug in cypress you cannot type values with dots
-    // cy
-    //   .root()
-    //   .getFormGroupInputFor('CPUs')
-    //   .type('{selectall}0.5');
-    //
+    cy.root()
+      .getFormGroupInputFor("CPUs")
+      .type("{selectall}0.5");
     cy.root().getFormGroupInputFor("Mem (MiB)").type("{selectall}32");
     cy.root().getFormGroupInputFor("Command").type(cmdline);
 
@@ -229,13 +218,9 @@ describe("Job JSON Editor", function() {
 
     // Fill-in the input elements
     cy.root().getFormGroupInputFor("ID *").type(`{selectall}${fullJobName}`);
-    //
-    // TODO: Due to a bug in cypress you cannot type values with dots
-    // cy
-    //   .root()
-    //   .getFormGroupInputFor('CPUs')
-    //   .type('{selectall}0.1');
-    //
+    cy.root()
+      .getFormGroupInputFor("CPUs")
+      .type("{selectall}0.1");
     cy.root().getFormGroupInputFor("Mem (MiB)").type("{selectall}32");
     cy.root().getFormGroupInputFor("Command").type(cmdline);
 
