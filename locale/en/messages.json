@@ -1,10 +1,55 @@
 {
+  "Cluster": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/components/ClusterHeader.js",
+        59
+      ]
+    ]
+  },
+  "Documentation": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/components/ClusterHeader.js",
+        136
+      ]
+    ]
+  },
+  "Install CLI": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/components/ClusterHeader.js",
+        143
+      ]
+    ]
+  },
+  "Overview": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/components/ClusterHeader.js",
+        114
+      ]
+    ]
+  },
+  "Support": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/components/ClusterHeader.js",
+        131
+      ]
+    ]
+  },
   "Total Tasks": {
     "translation": "",
     "origin": [
       [
         "src/js/components/charts/TasksChart.js",
-        120
+        119
       ]
     ]
   }
