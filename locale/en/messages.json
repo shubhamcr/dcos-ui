@@ -8,12 +8,30 @@
       ]
     ]
   },
+  "An error has occurred.": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/components/ComponentList.js",
+        102
+      ]
+    ]
+  },
   "Cluster": {
     "translation": "",
     "origin": [
       [
         "src/js/components/ClusterHeader.js",
         59
+      ]
+    ]
+  },
+  "Components Not Found": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/components/ComponentList.js",
+        99
       ]
     ]
   },
