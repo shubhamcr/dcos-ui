@@ -1,4 +1,13 @@
 {
+  "Access denied": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/components/AccessDeniedPage.js",
+        45
+      ]
+    ]
+  },
   "Cluster": {
     "translation": "",
     "origin": [
@@ -26,6 +35,15 @@
       ]
     ]
   },
+  "Log out": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/components/AccessDeniedPage.js",
+        32
+      ]
+    ]
+  },
   "Overview": {
     "translation": "",
     "origin": [
@@ -50,6 +68,15 @@
       [
         "src/js/components/charts/TasksChart.js",
         119
+      ]
+    ]
+  },
+  "You do not have access to this service. Please contact your {0} administrator or see <0>security documentation</0> for more information.": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/components/AccessDeniedPage.js",
+        47
       ]
     ]
   }
