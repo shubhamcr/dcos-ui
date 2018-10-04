@@ -94,7 +94,7 @@ pipeline {
 
     stage("Soak Docker Release") {
       agent {
-        label "mesos-ubuntu"
+        label "mesos-med"
       }
       steps {
         withCredentials([
@@ -102,7 +102,7 @@ pipeline {
           string(credentialsId: '42f2e3fb-3f4f-47b2-a128-10ac6d0f6825', variable: 'DOCKER_HUB_PASSWORD')
         ]) {
           sh "docker --help"
-          sh "docker login -u $DOCKER_HUB_USERNAME -p $DOCKER_HUB_PASSWORD"
+          sh "docker login -u '${env.DOCKER_HUB_USERNAME}' -p '${env.DOCKER_HUB_PASSWORD}'"
           sh "cd soak-tests/soak112s && ./deploy.sh"
         }
       }
