@@ -53,6 +53,15 @@
       ]
     ]
   },
+  "Close": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/components/Modals.js",
+        129
+      ]
+    ]
+  },
   "Cluster": {
     "translation": "",
     "origin": [
@@ -176,6 +185,15 @@
       [
         "src/js/components/charts/TasksChart.js",
         119
+      ]
+    ]
+  },
+  "We are unable to retrieve the version {0} versions. Please try again.": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/components/Modals.js",
+        100
       ]
     ]
   },
