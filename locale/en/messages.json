@@ -44,6 +44,15 @@
       ]
     ]
   },
+  "An error has occurred": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/components/ServerErrorModal.js",
+        107
+      ]
+    ]
+  },
   "An error has occurred.": {
     "translation": "",
     "origin": [
@@ -77,6 +86,10 @@
       [
         "src/js/components/Modals.js",
         129
+      ],
+      [
+        "src/js/components/ServerErrorModal.js",
+        75
       ]
     ]
   },
