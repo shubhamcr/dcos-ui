@@ -411,5 +411,14 @@
         47
       ]
     ]
+  },
+  "{0} Info": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/components/modals/VersionsModal.js",
+        31
+      ]
+    ]
   }
 }
