@@ -1,4 +1,13 @@
 {
+  "(Clear)": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/components/FilterHeadline.js",
+        69
+      ]
+    ]
+  },
   "Access denied": {
     "translation": "",
     "origin": [
@@ -86,6 +95,15 @@
       [
         "src/js/components/ClusterHeader.js",
         114
+      ]
+    ]
+  },
+  "Showing {currentLength} of {totalLength} {name}": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/components/FilterHeadline.js",
+        65
       ]
     ]
   },
