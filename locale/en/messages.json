@@ -125,6 +125,15 @@
       ]
     ]
   },
+  "Media": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/components/ImageViewer.js",
+        71
+      ]
+    ]
+  },
   "Overview": {
     "translation": "",
     "origin": [
