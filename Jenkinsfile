@@ -93,9 +93,6 @@ pipeline {
     }
 
     stage("Soak Docker Release") {
-      agent {
-        label "mesos-med"
-      }
       steps {
         withCredentials([
           string(credentialsId: '7bdd2775-2911-41ba-918f-59c8ae52326d', variable: 'DOCKER_HUB_USERNAME'),
