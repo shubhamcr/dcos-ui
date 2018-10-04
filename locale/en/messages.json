@@ -44,6 +44,19 @@
       ]
     ]
   },
+  "All Health Checks": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/components/UnitHealthDropdown.js",
+        12
+      ],
+      [
+        "src/js/components/UnitHealthDropdown.js",
+        13
+      ]
+    ]
+  },
   "An error has occurred": {
     "translation": "",
     "origin": [
@@ -138,6 +151,15 @@
       ]
     ]
   },
+  "Healthy": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/constants/UnitHealthStatus.js",
+        18
+      ]
+    ]
+  },
   "Install CLI": {
     "translation": "",
     "origin": [
@@ -180,6 +202,15 @@
       [
         "src/js/components/ImageViewer.js",
         71
+      ]
+    ]
+  },
+  "N/A": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/constants/UnitHealthStatus.js",
+        39
       ]
     ]
   },
@@ -243,6 +274,24 @@
       [
         "src/js/components/PlacementConstraintsSchemaField.js",
         31
+      ]
+    ]
+  },
+  "Unhealthy": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/constants/UnitHealthStatus.js",
+        25
+      ]
+    ]
+  },
+  "Warning": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/constants/UnitHealthStatus.js",
+        32
       ]
     ]
   },
