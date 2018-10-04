@@ -26,6 +26,15 @@
       ]
     ]
   },
+  "Add Placement Constraint": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/components/PlacementConstraintsPartial.js",
+        224
+      ]
+    ]
+  },
   "An error has occurred.": {
     "translation": "",
     "origin": [
@@ -194,6 +203,15 @@
       [
         "src/js/components/charts/TasksChart.js",
         119
+      ]
+    ]
+  },
+  "Unable to edit {0}": {
+    "translation": "",
+    "origin": [
+      [
+        "src/js/components/PlacementConstraintsSchemaField.js",
+        31
       ]
     ]
   },
