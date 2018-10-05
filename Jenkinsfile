@@ -32,7 +32,6 @@ pipeline {
     stage("Publish Universe") {
       agent {
         dockerfile {
-          filename "universe/Dockerfile"
           dir "universe"
         }
       }
