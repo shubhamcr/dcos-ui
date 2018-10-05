@@ -30,12 +30,6 @@ pipeline {
     }
 
     stage("Publish Universe") {
-      agent {
-        dockerfile {
-          dir "universe"
-        }
-      }
-
       steps {
         sh "echo 'FOOOOOOBAR'"
         sh "git clone https://github.com/mesosphere/dcos-commons.git ../dcos-commons"
