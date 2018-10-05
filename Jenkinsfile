@@ -38,18 +38,18 @@ pipeline {
       }
 
       steps {
+        sh "echo 'FOOOOOOBAR'"
         sh "git clone https://github.com/mesosphere/dcos-commons.git ../dcos-commons"
         sh "ls -la ../"
-        sh "echo 'FOOOOOOBAR' "
       }
     }
 
-    stage("Build") {
-      steps {
-        sh "npm --unsafe-perm install"
-        sh "npm run build"
-      }
-    }
+    // stage("Build") {
+    //   steps {
+    //     sh "npm --unsafe-perm install"
+    //     sh "npm run build"
+    //   }
+    // }
 
     // stage("Tests") {
     //   parallel {
