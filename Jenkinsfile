@@ -31,7 +31,6 @@ pipeline {
 
     stage("Publish Universe") {
       agent {
-        label "mesos-med"
         dockerfile {
           filename "universe/Dockerfile"
           dir "universe"
