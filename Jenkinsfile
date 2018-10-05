@@ -40,6 +40,7 @@ pipeline {
       steps {
         sh "git clone https://github.com/mesosphere/dcos-commons.git ../dcos-commons"
         sh "ls -la ../"
+        sh "echo 'FOOOOOOBAR' "
       }
     }
 
