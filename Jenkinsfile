@@ -92,8 +92,8 @@ pipeline {
     //   }
     // }
 
-    node('JenkinsMarathonCI-Debian9-2018-04-09') {
-      stage("Soak Docker Release") {
+    stage("Soak Docker Release") {
+      node('JenkinsMarathonCI-Debian9-2018-04-09') {
         steps {
           withCredentials([
             string(credentialsId: '7bdd2775-2911-41ba-918f-59c8ae52326d', variable: 'DOCKER_HUB_USERNAME'),
