@@ -29,12 +29,27 @@ pipeline {
       }
     }
 
-    // stage("Build") {
-    //   steps {
-    //     sh "npm --unsafe-perm install"
-    //     sh "npm run build"
-    //   }
-    // }
+    stage("Publish Universe") {
+      agent {
+        label "mesos-med"
+        dockerfile {
+          filename "universe/Dockerfile"
+          dir "universe"
+        }
+      }
+
+      steps {
+        sh "git clone https://github.com/mesosphere/dcos-commons.git ../dcos-commons"
+        sh "ls -la ../"
+      }
+    }
+
+    stage("Build") {
+      steps {
+        sh "npm --unsafe-perm install"
+        sh "npm run build"
+      }
+    }
 
     // stage("Tests") {
     //   parallel {
