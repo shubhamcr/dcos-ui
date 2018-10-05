@@ -31,9 +31,9 @@ pipeline {
 
     stage("Publish Universe") {
       steps {
-        sh "echo 'FOOOOOOBAR'"
         sh "git clone https://github.com/mesosphere/dcos-commons.git ../dcos-commons"
-        sh "ls -la ../"
+        // TODO: do we need the -a thingy?
+        sh "../dcos-commons/tools/build_package.sh 'dcos-ui' ./universe aws"
       }
     }
 
